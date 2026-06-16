@@ -24,6 +24,18 @@ export default function LandingPage() {
                 </div>
             </div>
 
+            {/* add bottom dot pattern */}
+            <div className="absolute right-3 bottom-3 animate-pulse">
+                <div className="grid grid-cols-5 gap-2 sm:gap-3 md:gap-4">
+                    {[...Array(25)].map((_, i) => (
+                        <span
+                            key={i}
+                            className="w-[4px] h-[4px] sm:w-[5px] sm:h-[5px] md:w-[6px] md:h-[6px] rounded-full bg-white/20"
+                        />
+                    ))}
+                </div>
+            </div>
+
             {/* Main Content */}
             <div className="relative z-10 flex flex-col items-center justify-center min-h-screen px-4 sm:px-6 py-10">
 
